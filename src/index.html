@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:weight@400;700&display=swap">
+</head>
+<body>
+    <div id="app">
+        <img class="logo" src="./favicon.png" alt="webpack logo">
+
+        <h1 class="title">
+            <%= htmlWebpackPlugin.options.title %>
+        </h1>
+
+        <ul class="list">
+            <li>Dev Server</li>
+            <li>Babel</li>
+            <li>SCSS</li>
+            <li>Build for production</li>
+        </ul>
+
+        <p>You can edit me on: <code><%= htmlWebpackPlugin.options.editMe %></code></p>
+    </div>
+
+    <!-- JS bundle included automatically by webpack -->
+</body>
+</html>
